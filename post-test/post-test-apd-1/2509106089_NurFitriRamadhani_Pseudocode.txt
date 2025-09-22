@@ -1,0 +1,19 @@
+Function Main
+    Declare Integer N
+    Declare Real TB
+
+    Output "masukkan pemakaian kWh"
+    Input N
+    If N>300
+        Assign TB = N*2000
+        Output "Total bayar adalah" & TB
+    Else
+        If N >= 101
+            Assign TB = N*1500
+            Output "Total bayar adalah" & TB
+        Else
+            Assign TB = N*1200
+            Output "Total bayar adalah" & TB
+        End
+    End
+End

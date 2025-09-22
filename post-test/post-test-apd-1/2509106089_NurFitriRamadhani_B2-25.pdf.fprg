@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2509106089_NurFitriRamadhani"/>
+        <attribute name="authors" value="ASUS TUF GAMING"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-13 04:54:10 PM"/>
+        <attribute name="created" value="QVNVUyBUVUYgR0FNSU5HO0xBUFRPUC1WVFU0M09NODsyMDI1LTA5LTEzOzA2OjAwOjI4IEFNOzM0MDA="/>
+        <attribute name="edited" value="QVNVUyBUVUYgR0FNSU5HO0xBUFRPUC1WVFU0M09NODsyMDI1LTA5LTEzOzA0OjU0OjEwIFBNOzM7MzUyMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N, TB" type="Integer" array="False" size=""/>
+            <output expression="&quot;masukkan pemakaian kWh&quot;" newline="True"/>
+            <input variable="N"/>
+            <if expression="N&gt;300">
+                <then>
+                    <assign variable="TB" expression="N*2000"/>
+                    <output expression="&quot;Total bayar adalah&quot; &amp; TB" newline="True"/>
+                </then>
+                <else>
+                    <if expression="N &gt;= 101">
+                        <then>
+                            <assign variable="TB" expression="N*1500"/>
+                            <output expression="&quot;Total bayar adalah&quot; &amp; TB" newline="True"/>
+                        </then>
+                        <else>
+                            <assign variable="TB" expression="N*1200"/>
+                            <output expression="&quot;Total bayar adalah&quot; &amp; TB" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
