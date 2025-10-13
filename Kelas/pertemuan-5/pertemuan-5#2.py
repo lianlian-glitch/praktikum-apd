@@ -1,0 +1,3 @@
+praktikum = ["Mahasiswa", 20, True, 45, 10, ["APD", 25, ["turunan", ["hewan"]]]]
+
+print(praktikum)
