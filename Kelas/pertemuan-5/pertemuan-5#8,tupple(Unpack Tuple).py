@@ -3,7 +3,7 @@
 #print(matakuliah[1:5:2])
 
 #Unpack Tuple
-tugas = ('ranngkuman', 'arduino', 'scrapping')
+tugas = ('rangkuman', 'arduino', 'scrapping')
 (PTI, Orsikom, basisdata) = tugas
 
 print(PTI)

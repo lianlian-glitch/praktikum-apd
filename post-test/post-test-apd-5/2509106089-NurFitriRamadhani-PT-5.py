@@ -15,7 +15,7 @@ if status == "admin":
             login -= 1
             if login >= 0:
                 print(f"login gagal! sisa percobaan {login}")
-                
+
             else:
                 print("login gagal setelah 3 kali percobaan. program dihentikan")
                 break
@@ -25,10 +25,11 @@ if status == "admin":
     else:
         print("Akses ditolak. Silakan coba lagi nanti")
 
+    print(" ")
     print("===PILIHAN===")
     print("1. Menambahkan lukisan baru")
     print("2. Daftar Lukiksan")
-    print("3. Edit data Lukisan")
+    print("3. Edit daftar Lukisan")
     print("4. Hapus Koleksi Lukisan")
     print("5. keluar dari program")
     pilihan = int(input("input pilihan: "))
@@ -53,67 +54,84 @@ if status == "admin":
         print(f"5. {daftar[4]}")
         print(f"6. {daftar[5]}")
         print(f"7. {daftar[6]}")
+        print("penambahan daftar baru selesai.")
 
     elif pilihan == 2:
         daftar = [
             ["Mona Lisa", "The Last Supper", "The Starry Night"],
             ["Guernica", "The Persistence of Memory", "Girl with a Pearl Earring"]
         ]
+        print(" ")
+        print("===daftar Lukisan===")
         print(f"1. {daftar[0][0]}")
         print(f"2. {daftar[0][1]}")
         print(f"3. {daftar[0][2]}")
         print(f"4. {daftar[1][0]}")
         print(f"5. {daftar[1][1]}")
         print(f"6. {daftar[1][2]}")
-        pilihan = int(input("lukisan: "))
-        if pilihan == 1:
-            print("===Lukisan Mona Lisa===")
-            print("pewncipta: Leonardo da Vinci, seniman Renaissance Italia (1452-1519).")
-            print("Tahun Pembuatan: Sekitar 1503-1506, meskipun Leonardo terus menyempurnakannya hingga kematiannya pada 1519.")
-            print("Lokasi Saat Ini: Museum Louvre, Paris, Prancis. Dipajang di ruangan khusus sejak 1914, dengan pengamanan ketat (kaca anti-peluru dan pelindung dari suhu/kelembaban).")
-            print("Umur Saat Ini: Sekitar 518-521 tahun (per 2024).")
+        print("")
 
-        elif pilihan ==2:
-            print("===Lukisan The Last Supper===")
-            print("Pencipta: Leonardo da Vinci, seniman, ilmuwan, dan arsitek Renaissance Italia (1452-1519).")
-            print("Tahun Pembuatan: 1495-1498. Leonardo menerima komisi dari Duke of Milan, Ludovico Sforza, untuk melukis dinding ruang makan (refektori) biara Santa Maria delle Grazie.")
-            print("Lokasi Saat Ini: Masih di dinding refektori biara Santa Maria delle Grazie, Milan, Italia. Dilindungi oleh UNESCO sebagai Situs Warisan Dunia sejak 1980. Pengunjung dibatasi (maksimal 40 orang per 15 menit) untuk menjaga kondisi.")
-            print("Umur Saat Ini: Sekitar 526-529 tahun (per 2024).")
+        print("ingin melihat data luksan?")
+        YaAtauTidak = input("ya/tidak? ")
+        if YaAtauTidak == "ya":
+            print(" ")
+            print("pilih lukisan 1 sampai 6: ")
+            print(" ")
+            pilihan = int(input("lukisan: "))
+            if pilihan == 1:
+                print(" ")
+                print("===Lukisan Mona Lisa===")
+                print("pewncipta: Leonardo da Vinci, seniman Renaissance Italia (1452-1519).")
+                print("Tahun Pembuatan: Sekitar 1503-1506, meskipun Leonardo terus menyempurnakannya hingga kematiannya pada 1519.")
+                print("Lokasi Saat Ini: Museum Louvre, Paris, Prancis. Dipajang di ruangan khusus sejak 1914, dengan pengamanan ketat (kaca anti-peluru dan pelindung dari suhu/kelembaban).")
+                print("Umur Saat Ini: Sekitar 518-521 tahun (per 2024).")
+                print(" ")
 
-        elif pilihan == 3:
-            print("=== Lukisan The Starry Night===")
-            print("Seniman: Vincent van Gogh (1853-1890).")
-            print("Tahun pembuatan: 1889.")
-            print("Lokasi Saat Ini: Disimpan di Museum of Modern Art (MoMA), New York, AS, sejak 1941. Diakuisisi melalui donasi dari keluarga Lillie P. Bliss.")
-            print("umur saat ini: 135 tahun (per 2024)")
+            elif pilihan == 2:
+                print("===Lukisan The Last Supper===")
+                print("Pencipta: Leonardo da Vinci, seniman, ilmuwan, dan arsitek Renaissance Italia (1452-1519).")
+                print("Tahun Pembuatan: 1495-1498. Leonardo menerima komisi dari Duke of Milan, Ludovico Sforza, untuk melukis dinding ruang makan (refektori) biara Santa Maria delle Grazie.")
+                print("Lokasi Saat Ini: Masih di dinding refektori biara Santa Maria delle Grazie, Milan, Italia. Dilindungi oleh UNESCO sebagai Situs Warisan Dunia sejak 1980. Pengunjung dibatasi (maksimal 40 orang per 15 menit) untuk menjaga kondisi.")
+                print("Umur Saat Ini: Sekitar 526-529 tahun (per 2024).")
 
-        elif pilihan == 4:
-            print("===Lukisan Guernica===")
-            print("Seniman: Pablo Picasso (1881-1973), pelukis Spanyol yang menjadi tokoh utama Cubism dan seni modern.")
-            print("Tahun pembuatan: 1937. Dibuat dalam waktu singkat (sekitar 35 hari) di studio Picasso di Paris, mulai Mei 1937, setelah ia mendengar berita pemboman Guernica (kota Basque, Spanyol) oleh pasukan Nazi Jerman dan fasis Italia pada 26 April 1937.")
-            print("lokasi saat ini: Disimpan di Museo Nacional Centro de Arte Reina Sofía, Madrid, Spanyol, sejak 1981. Ini adalah museum seni modern nasional Spanyol, di mana Guernica menjadi karya utama.")
-            print("umur saat ini: 87 tahun (per 2024)")
+            elif pilihan == 3:
+                print("=== Lukisan The Starry Night===")
+                print("Seniman: Vincent van Gogh (1853-1890).")
+                print("Tahun pembuatan: 1889.")
+                print("Lokasi Saat Ini: Disimpan di Museum of Modern Art (MoMA), New York, AS, sejak 1941. Diakuisisi melalui donasi dari keluarga Lillie P. Bliss.")
+                print("umur saat ini: 135 tahun (per 2024)")
 
-        elif pilihan == 5:
-            print("===The Persistence of Memory===")
-            print("Seniman: Salvador Dalí (1904-1989)")
-            print("Tahun pembuatan: 1931. Dibuat selama musim panas di Port Lligat, Costa Brava, Spanyol, di rumah Dalí.")
-            print("lokasi: Masih di dinding refektori biara Santa Maria delle Grazie, Milan, Italia. Dilindungi oleh UNESCO sebagai Situs Warisan Dunia sejak 1980.")
-            print("umur saat ini: 93 tahun (per 2024)")
+            elif pilihan == 4:
+                print("===Lukisan Guernica===")
+                print("Seniman: Pablo Picasso (1881-1973), pelukis Spanyol yang menjadi tokoh utama Cubism dan seni modern.")
+                print("Tahun pembuatan: 1937. Dibuat dalam waktu singkat (sekitar 35 hari) di studio Picasso di Paris, mulai Mei 1937, setelah ia mendengar berita pemboman Guernica (kota Basque, Spanyol) oleh pasukan Nazi Jerman dan fasis Italia pada 26 April 1937.")
+                print("lokasi saat ini: Disimpan di Museo Nacional Centro de Arte Reina Sofía, Madrid, Spanyol, sejak 1981. Ini adalah museum seni modern nasional Spanyol, di mana Guernica menjadi karya utama.")
+                print("umur saat ini: 87 tahun (per 2024)")
 
-        elif pilihan == 6:
-            print("=== Lukisan Girl with a Pearl Earring===")
-            print("seniman: Johannes Vermeer (1632-1675)")
-            print("Tahun pembuatan: Sekitar 1665 (diperkirakan antara 1662-1665, karena tidak ada catatan pasti).")
-            print("lokasi: Disimpan di Mauritshuis, museum seni di The Hague (Den Haag), Belanda, sejak 1902.")
-            print("umur saat ini: 359 tahun (per 2024)")
+            elif pilihan == 5:
+                print("===The Persistence of Memory===")
+                print("Seniman: Salvador Dalí (1904-1989)")
+                print("Tahun pembuatan: 1931. Dibuat selama musim panas di Port Lligat, Costa Brava, Spanyol, di rumah Dalí.")
+                print("lokasi: Masih di dinding refektori biara Santa Maria delle Grazie, Milan, Italia. Dilindungi oleh UNESCO sebagai Situs Warisan Dunia sejak 1980.")
+                print("umur saat ini: 93 tahun (per 2024)")
 
+            elif pilihan == 6:
+                print("=== Lukisan Girl with a Pearl Earring===")
+                print("seniman: Johannes Vermeer (1632-1675)")
+                print("Tahun pembuatan: Sekitar 1665 (diperkirakan antara 1662-1665, karena tidak ada catatan pasti).")
+                print("lokasi: Disimpan di Mauritshuis, museum seni di The Hague (Den Haag), Belanda, sejak 1902.")
+                print("umur saat ini: 359 tahun (per 2024)")
+
+            else:
+                print("input salah. Error!")
+        elif YaAtauTidak == "tidak":
+            print("kembali")
         else:
-            print("input salah. Error!")
+            ()
 
     elif pilihan == 3:
         daftar =  ["Mona Lisa", "The Last Supper", "The Starry Night", "Guernica", "The Persistence of Memory", "Girl with a Pearl Earring"]
-        print("Edit data Lukisan")
+        print("Edit daftar Lukisan")
         print("===daftar Lukisan===")
         print(f"1. {daftar[0]}")
         print(f"2. {daftar[1]}")
@@ -154,7 +172,7 @@ if status == "admin":
 
         elif pilihan ==2:
             print("===Lukisan The Last Supper===")
-            Update = input("edit/hapus): ")
+            Update = input("edit/ubah/hapus): ")
             if pilihan == "edit":
                 Data_TLS = ["Pencipta: Leonardo da Vinci, seniman Renaissance Italia (1452-1519).", "Tahun Pembuatan: 1495-1498.", "Umur Saat Ini: Sekitar 526-529 tahun (per 2024)."]
                 print(f"1. {Data_TLS[0]}")
@@ -184,7 +202,7 @@ if status == "admin":
 
         elif pilihan == 3:
             print("=== Lukisan The Starry Night===")
-            Update = input("edit/ganti/hapus): ")
+            Update = input("edit/ubah/hapus): ")
             if Update == "edit":
                 Data_TSN = ["Seniman: Vincent van Gogh (1853-1890).", "Tahun pembuatan: 1889.", "umur saat ini: 135 tahun (per 2024)"]
                 print(f"1. {Data_TSN[0]}")
@@ -213,7 +231,7 @@ if status == "admin":
 
         elif pilihan == 4:
             print("===Lukisan Guernica===")
-            Update = input("edit/ganti/hapus): ")
+            Update = input("edit/ubah/hapus): ")
             if pilihan == "edit":
                 Data_Guernica = ["Seniman: Pablo Picasso (1881-1973).", "Tahun pembuatan: 1937.", "umur saat ini: 87 tahun (per 2024)"]
                 print(f"1. {Data_Guernica[0]}")
@@ -242,7 +260,7 @@ if status == "admin":
 
         elif pilihan == 5:
             print("===The Persistence of Memory===")
-            Update = input("edit/ganti/hapus): ")
+            Update = input("edit/ubah/hapus): ")
             if pilihan == "edit":
                 Data_TPOM = ["Seniman: Salvador Dalí (1904-1989)", "Tahun pembuatan: 1931.", "umur saat ini: 93 tahun (per 2024)"]
                 print(f"1. {Data_TPOM[0]}")
@@ -272,7 +290,7 @@ if status == "admin":
 
         elif pilihan == 6:
             print("=== Lukisan Girl with a Pearl Earring===")
-            Update = input("edit/ganti/hapus): ")
+            Update = input("edit/ubah/hapus): ")
             if pilihan == "edit":
                 Data_GWAPE = ["seniman: Johannes Vermeer (1632-1675)", "Tahun pembuatan: sekitar 1662-1665, karena tidak ada catatan pasti.", "umur saat ini: 359 tahun (per 2024)"]
                 print(f"1. {Data_GWAPE[0]}")
@@ -302,7 +320,7 @@ if status == "admin":
     elif pilihan == 4:
         print("===Hapus Koleksi Lukisan===")
         daftar =  ["Mona Lisa", "The Last Supper", "The Starry Night", "Guernica", "The Persistence of Memory", "Girl with a Pearl Earring"]
-        print("===daftar Lukisan===")
+        print("=== Daftar Lukisan ===")
         print(f"1. {daftar[0]}")
         print(f"2. {daftar[1]}")
         print(f"3. {daftar[2]}")
@@ -317,13 +335,13 @@ if status == "admin":
         print(f"4. {daftar[3]}")
         print(f"5. {daftar[4]}")
     elif pilihan == 5:
-        print("===keluar dari progra===")
+        print("=== Keluar Dari Program ===")
     else:
         ()
 
 elif status == "pengguna":
     nama = input("masukkan nama anda: ")
-    print("===PILIHAN===")
+    print("=== PILIHAN ===")
     print("1. Tampilkan Semua Lukisan")
     print("2. Tampilkan Lukisan berdasarkan Pencipta nya")
     pilihan = int(input("masuk ke pilihan: "))
@@ -332,7 +350,7 @@ elif status == "pengguna":
             ["Mona Lisa", "The Last Supper", "The Starry Night"],
             ["Guernica", "The Persistence of Memory", "Girl with a Pearl Earring"]
         ]
-        print("===daftar Lukisan===")
+        print("=== Daftar Lukisan ===")
         print(f"1. {lukisan[0][0]}")
         print(f"2. {lukisan[0][1]}")
         print(f"3. {lukisan[0][2]}")
@@ -342,7 +360,7 @@ elif status == "pengguna":
         
     elif pilihan == 2:
         pencipta = ("Leonardo da Vinci", "Vincent van Gogh", "Pablo Picasso", "Salvador Dalí", "Johannes Vermeer")
-        print("===daftar Pelukis===")
+        print("=== Daftar Pelukis ===")
         print(f"1. {pencipta[0]}")
         print(f"2. {pencipta[1]}")
         print(f"3. {pencipta[2]}")
@@ -361,7 +379,7 @@ elif status == "pengguna":
                 print("Lokasi Saat Ini: Museum Louvre, Paris, Prancis. Dipajang di ruangan khusus sejak 1914, dengan pengamanan ketat (kaca anti-peluru dan pelindung dari suhu/kelembaban).")
                 print("Umur Saat Ini: Sekitar 518-521 tahun (per 2024).")
             elif info == 2:
-                print("===Lukisan The Last Supper===")
+                print("=== Lukisan The Last Supper ===")
                 print("Pencipta: Leonardo da Vinci, seniman, ilmuwan, dan arsitek Renaissance Italia (1452-1519).")
                 print("Tahun Pembuatan: 1495-1498. Leonardo menerima komisi dari Duke of Milan, Ludovico Sforza, untuk melukis dinding ruang makan (refektori) biara Santa Maria delle Grazie.")
                 print("Lokasi Saat Ini: Masih di dinding refektori biara Santa Maria delle Grazie, Milan, Italia. Dilindungi oleh UNESCO sebagai Situs Warisan Dunia sejak 1980. Pengunjung dibatasi (maksimal 40 orang per 15 menit) untuk menjaga kondisi.")
@@ -393,6 +411,7 @@ elif status == "pengguna":
             print("Lukisan Guernica")
             info = int(input("lihat data penting lukisan? ya/tidah: "))
             if info == "ya":
+                print("=== Lukisan Guernica ===")
                 print("Seniman: Pablo Picasso (1881-1973), pelukis Spanyol yang menjadi tokoh utama Cubism dan seni modern.")
                 print("Tahun pembuatan: 1937. Dibuat dalam waktu singkat (sekitar 35 hari) di studio Picasso di Paris, mulai Mei 1937, setelah ia mendengar berita pemboman Guernica (kota Basque, Spanyol) oleh pasukan Nazi Jerman dan fasis Italia pada 26 April 1937.")
                 print("lokasi saat ini: Disimpan di Museo Nacional Centro de Arte Reina Sofía, Madrid, Spanyol, sejak 1981. Ini adalah museum seni modern nasional Spanyol, di mana Guernica menjadi karya utama.")
@@ -423,9 +442,10 @@ elif status == "pengguna":
         
         elif lihat == 5:
             print("~~Johannes Vermeer~~")
-            print("== Girl with a Pearl Earring ==")
+            print("Girl with a Pearl Earring")
             info = int(input("lihat data penting lukisan? ya/tidah: "))
             if info == "ya":
+                print("=== Girl with a Pearl Earring ===")
                 print("seniman: Johannes Vermeer (1632-1675)")
                 print("Tahun pembuatan: Sekitar 1665 (diperkirakan antara 1662-1665, karena tidak ada catatan pasti).")
                 print("lokasi: Disimpan di Mauritshuis, museum seni di The Hague (Den Haag), Belanda, sejak 1902.")
@@ -437,8 +457,8 @@ elif status == "pengguna":
             else:
                 ()
         else:
-            ()
+            print("keluar dari program manajen lukisan.")
     else:
-        ()
+        print("ERROR! Keluar dari program.")
 else:
-    ()
+    print("ERROR! Keluar dari program.")
