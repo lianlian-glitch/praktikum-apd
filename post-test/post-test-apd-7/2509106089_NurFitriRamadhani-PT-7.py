@@ -234,24 +234,6 @@ try:
         if login == 0:
             print("akses di tolak. silakan coba lagi nanti")
             exit()
-        
-        # Daftar lukisan
-        Daftar_Luksian = [
-            "Mona Lisa",
-            "The Last Supper",
-            "The Starry Night",
-            "Guernica",
-            "The Persistence of Memory",
-            "Girl with a Pearl Earring",
-        ]
-        # Daftar pencipta
-        pencipta = [
-            "Leonardo da Vinci",
-            "Vincent van Gogh",
-            "Pablo Picasso",
-            "Salvador Dalí",
-            "Johannes Vermeer",
-        ]
         # Update variabel global
         total_lukisan = len(Daftar_Luksian)
         total_pencipta = len(pencipta)
@@ -362,35 +344,9 @@ try:
                 print("\nProgram dihentikan.")
                 break
     elif status == "pengguna":
-        Daftar_Luksian = [
-            "Mona Lisa",
-            "The Last Supper",
-            "The Starry Night",
-            "Guernica",
-            "The Persistence of Memory",
-            "Girl with a Pearl Earring",
-        ]
-        pencipta = [
-            "Leonardo da Vinci",
-            "Vincent van Gogh",
-            "Pablo Picasso",
-            "Salvador Dalí",
-            "Johannes Vermeer",
-        ]
         # Update variabel global
         total_lukisan = len(Daftar_Luksian)
         total_pencipta = len(pencipta)
-        # Perlihatkan Daftar Lukisan
-        def show_data_lukisan():
-            try:
-                if len(Daftar_Luksian) <= 0:
-                    print("Belum ada data.")
-                else:
-                    print("Daftar luksan")
-                    for indeks in range(len(Daftar_Luksian)):
-                        print(indeks, "|", Daftar_Luksian[indeks])
-            except TypeError:
-                print("Tipe data tidak sesuai!")
         # Fungsi untuk menampilkan menu
         def show_menu():
             try:
